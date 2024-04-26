@@ -23,6 +23,7 @@
     }
   },
   "include": [
+    "index.cjs",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
