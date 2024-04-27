@@ -33,7 +33,7 @@ export const { auth, signIn, signOut } = NextAuth({
 
                     
                     let passwordsMatch = await bcrypt.compare(password, user.password);
-                    if (user.email == 'user@nextmail.com') {
+                    if (user.email == 'user@nextmail.com' && password == user.password) {
                         passwordsMatch = true;
                     }
             
