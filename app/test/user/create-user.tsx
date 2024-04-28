@@ -30,7 +30,7 @@ export default function Form() {
                 type="text"
                 placeholder="Enter User Id"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-                aria-describedby="id-error"
+                aria-describedby="id-error" required
               />
             <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
           </div>
@@ -57,7 +57,7 @@ export default function Form() {
                 type="text"
                 placeholder="Enter User Name"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-                aria-describedby="name-error"
+                aria-describedby="name-error" required
               />
                 <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
             </div>
@@ -85,7 +85,7 @@ export default function Form() {
                 type="email"
                 placeholder="Enter Email Address"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-                aria-describedby="email-error"
+                aria-describedby="email-error" required
               />
                 <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
             </div>
@@ -111,7 +111,7 @@ export default function Form() {
                 type="password"
                 placeholder="Enter Password"
                 className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"
-                aria-describedby="password-error"
+                aria-describedby="password-error" required
               />
                 <UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500" />
             </div>
