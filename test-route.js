@@ -59,11 +59,11 @@ async function routes (fastify, options) {
 
   const userBodyJsonSchema = {
     type: 'object',
-    required: ['user'],
+    required: ['id', 'name', 'email', 'password'],
     properties: {
       id: { type: 'string' },
       name: { type: 'string' },
-      email: { type: 'string' },
+      email: { type: 'string' },  
       password: { type: 'string' }
     },
   }
@@ -73,10 +73,11 @@ async function routes (fastify, options) {
   }
 
   fastify.post('/user', { schema }, async (request, reply) => {
-    // console.log(request.body.user)
-    // console.log(request.body.user.name)
+    // console.log(request)
+    console.log(request.body)
+    console.log(request.body.name)
     // we can use the `request.body` object to get the data sent by the client
-    const result = await prisma.user.create( {data:request.body.user} )
+    const result = await prisma.user.create( {data:request.body} )
     return result
   })
 }
